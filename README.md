@@ -13,7 +13,6 @@ DAFT REM MAR21
 - [Organization](#organization)
 - [Cleaning](#cleaning)
 - [Analysis](#analysis)
-- [Model Training and Evaluation](#model-training-and-evaluation)
 - [Conclusion](#conclusion)
 - [Workflow](#workflow)
 - [Links](#links)
