@@ -25,16 +25,28 @@ DAFT REM21
 
 ## Dataset
 
-Included in the dataset are ** tweets from ___ until May 17th, 2021 with the following contents:
+Included in the dataset are 108.293 tweets from May 30th, 2021 until May 17th, 2021 with the following contents:
 
-- climate change
-- global warming
+- Climate change
+- Global warming
 
 filtered by:
 
-- english language
-- without retweets
-- without replies
+- English language
+- Without retweets
+- Without replies
+
+And 11.041 tweets with users located in the US from January 6th, 2019 to May 18th, 2021, with the following contents:
+
+- Climate change
+- Global warming
+- Climate hoax
+
+filtered by:
+
+- English language
+- Without retweets
+- Without replies
 
 The tweets are scraped from Twitter using snscrape - info on snscrape can be found here: https://github.com/JustAnotherArchivist/snscrape
 
@@ -44,13 +56,9 @@ File Structure:
 
 ```
 ├── README.md            <- README to explain project motivation
-├── Data
-│   ├── Cleaning         <- Data scraped from twitter (with geo location and without)            
-│   └── Final            <- Cleaned datasets
+├── Data                 <- Cleaned datasets
 │
 ├── Notebooks            <- Jupyter notebooks
-│   ├── Analysis         <- Sentiment Analysis and EDA           
-│   └── Classification   <- Machine Learning   
 │
 └── Figures             <- Important graphs and figures
 
@@ -59,33 +67,25 @@ File Structure:
 
 ## Cleaning
 
-Cleaned the dataset from URLS and extracted hashtags within the tweets.
+Cleaned the dataset from URLS, emojis and other special characters. Cleaned text for natural language processing using tokenization, lemmatization. Extracted popular hashtags and mentions
 
 ## Analysis
-* Overview the general steps you went through to analyze your data in order to test your hypothesis.
-* Document each step of your data exploration and analysis.
-* Include charts to demonstrate the effect of your work.
-* If you used Machine Learning in your final project, describe your feature selection process.
-
-## Model Training and Evaluation
-*Include this section only if you chose to include ML in your project.*
-* Describe how you trained your model, the results you obtained, and how you evaluated those results.
+* Sentiment analysis with the vader library
+* Analysis for both world wide data and US data only
+* Analysis by month, city and time for the US data
+* Wordclouds for popular hashtags, mentions and common words
+* Classifying tweets into popular topics using Non-Negative Matrix Factorization (NMF).
 
 ## Conclusion
-* Summarize your results. What do they mean?
-* What can you say about your hypotheses?
-* Interpret your findings in terms of the questions you try to answer.
+* Sentiment overall mostly stable, with more neutral and positive sentiment than negative.
+* Very popular topic with high polarity and anger
 
 ## Future Work
-Address any questions you were unable to answer, or any next steps or future extensions to your project.
-
-## Workflow
-Outline the workflow you used in your project. What were the steps?
-How did you test the accuracy of your analysis and/or machine learning algorithm?
+Classifying tweets into climate believers and deniers.
 
 
 ## Links
 
 [Repository](https://github.com/lisasaundersgit/Twitter-Sentiment)  
-[Slides](https://www.canva.com/design/DAEeX4-s6sY/eELRts6vczwVFX2a3FskiQ/view?utm_content=DAEeX4-s6sY&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)  
+[Slides](https://www.canva.com/design/DAEfAU94HIc/wc6z_Ifg4ep6JGOrWhUeKA/view?utm_content=DAEfAU94HIc&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)  
 [Organization on Notion](https://www.notion.so/Twitter-Climate-Change-Sentiment-641d64af5efb46acb311acc7c810e9f7)  
