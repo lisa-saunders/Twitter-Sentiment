@@ -15,7 +15,6 @@ DAFT REM21
 - [Analysis](#analysis)
 - [Model Training and Evaluation](#model-training-and-evaluation)
 - [Conclusion](#conclusion)
-- [Future Work](#future-work)
 - [Workflow](#workflow)
 - [Links](#links)
 
@@ -67,21 +66,21 @@ File Structure:
 
 ## Cleaning
 
-Cleaned the dataset from URLS, emojis and other special characters. Cleaned text for natural language processing using tokenization, lemmatization. Extracted popular hashtags and mentions
+Cleaned the dataset from URLS, emojis and other special characters. Cleaned text for natural language processing using tokenization, lemmatization. Extracted popular hashtags and mentions.
 
 ## Analysis
 * Sentiment analysis with the vader library
 * Analysis for both world wide data and US data only
 * Analysis by month, city and time for the US data
 * Wordclouds for popular hashtags, mentions and common words
-* Classifying tweets into popular topics using Non-Negative Matrix Factorization (NMF).
+* Classifying tweets into popular topics using Non-Negative Matrix Factorization (NMF)
 
 ## Conclusion
-* Sentiment overall mostly stable, with more neutral and positive sentiment than negative.
+* Sentiment overall mostly stable, with more neutral and positive sentiment than negative
 * Very popular topic with high polarity and anger
 
 ## Future Work
-Classifying tweets into climate believers and deniers.
+* Classifying tweets into climate believers and deniers
 
 
 ## Links
